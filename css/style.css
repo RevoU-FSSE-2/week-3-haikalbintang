@@ -374,11 +374,6 @@ textarea {
     transition: 0.8s;
 }
 
-/* for tablet and desktop */
-@media only screen and (min-width: 768px) {
-
-}
-
 /* for tablet and phone */
 @media only screen and (max-width: 768px) {
     body {
@@ -390,6 +385,23 @@ textarea {
         justify-content: space-around;
         display:flex;
         flex-direction: column;
+    }
+    .facts-grid-container {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 720px 240px 240px 240px;
+        gap: 24px;
+        padding: 0 24px 24px 24px;
+        border: 2px solid black;
+    }
+    .item-1 {
+        grid-column: 1/3 span;
+        grid-row: 1/3 span;
+        grid-row-end: 4;
+        width: 100%;
+        overflow: hidden;
+        background-color: #b10303;
+        border-radius: 5px;
     }
     
 }
