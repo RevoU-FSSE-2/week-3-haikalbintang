@@ -2,7 +2,7 @@
     font-family: Naruto-Sans;
     src: url(fonts/njnaruto.ttf);
 }
-font-face {
+@font-face {
     font-family: Naruto-Sans;
     src: url(fonts/njnaruto.ttf);
     font-weight: bold;
@@ -319,6 +319,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+/* Footer&Form */
 footer {
     border-top: 5px solid rgb(207, 100, 29);
     margin-top: 15px;
@@ -330,23 +331,47 @@ footer {
     color: white;
     padding-bottom: 20px;
 }
+#form > h2 {
+    margin-top: 30px;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="date"]
+input[type="date"],
 textarea {
   width: 100%;
   padding: 4px 4px;
   margin: 8px 0;
   display: block;
 }
+.personal-data {
+    margin;
+}
+.personal-data > legend {
+    font-size: 1.2rem;
+    color: rgb(207, 100, 29);
+}
+.voting {
+    margin-top: 20px;
+}
+.voting > legend {
+    font-size: 1.2rem;
+    color: rgb(207, 100, 29);
+}
 #submit-btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     font-size: 16px;
     margin-top: 10px;
+    color: white;
+    background-color: firebrick;
+    width: 100%;
+}
+#submit-btn:hover {
+    background-color: black;
+    transition: 0.8s;
 }
 
 /* for tablet and desktop */
